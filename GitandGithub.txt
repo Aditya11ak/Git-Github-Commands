@@ -96,6 +96,44 @@ git branch                      - to check branch
 git branch -M main              - to rename branch
 git push origin main            -  to push the changes onto the github
 
+if any kind of error occured then you have to use the git pull to fix it
+
+! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Aditya11ak/smallPersonalProjects.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+if this kind of error occured again then you have to use this command
+
+git pull --rebase origin main
+
+
+to switch from one origin to another
+To switch your current local Git project to track a different remote repository (using a new GitHub link), follow these steps:
+
+✅ Step 1: Remove the old remote (optional but clean)
+bash
+Copy
+Edit
+git remote remove origin
+✅ Step 2: Add the new remote
+bash
+Copy
+Edit
+git remote add origin https://github.com/YourUsername/NewRepository.git
+Replace the link with your new repo URL.
+
+✅ Step 3: Push your code to the new remote
+bash
+Copy
+Edit
+git push -u origin main
+If your branch is named something other than main (e.g., master), adjust accordingly.
+
+
+
 
 @# git log   -- to check all the commits made from  the local stroage..
 
