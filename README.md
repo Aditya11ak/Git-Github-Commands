@@ -10,4 +10,4 @@ This repository is a hands-on notebook of my Git and GitHub learning journey. It
 - Sample HTML files
 
 ## How to Use
-Clone this repo and explore each folder to see command usage in context.
+Read the txt file notes and usnderstand most of the commands that genrally used in the Git-Github
