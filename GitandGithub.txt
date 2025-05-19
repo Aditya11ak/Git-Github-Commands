@@ -8,24 +8,24 @@ apart from the git there are more version control systems available such as
 Git is considered better because it is faster, more flexible, has stronger branching and merging, 
 a larger community, and wider tool support compared to Mercurial and Bazaar.
 
-touch filename.extension     --  this is the command to create the file in the folder with command.
+touch filename. extension     --  this is the command to create the file in the folder with command.
 
 
-git provides us 2 major benifits 
+git provides us 2 major benefits 
 1. to track the history 
 2. collaboration with other developers
 
 
 1) It helps us to track the history till which the code is implemented and if we wanted to go back to previous version of our code 
 its ok for small project to manually change all the things but for large scale projects its important to automate it because there is risk of 
-deletion of importnat part deletoin of the project..
+deletion of important part deletion of the project..
 
 ~  <- This sign indicates that we are in our root directory
 
 Configuring the git means for which account we want to login to the github pages and from which of our account we want to do the changes ?
-thats all the things which are important.
+that’s all the things which are important.
 
-2) there is two types of setup which we can do thats first is Global setup and second is Local setup which we can do with different accounts
+2) there is two types of setup which we can do that’s first is Global setup and second is Local setup which we can do with different accounts
 
 
 Command--
@@ -35,7 +35,7 @@ git config --global user.email "myemail@gmail.com"
 git config --list
 
 
-git log   - to check all the commits made from  the local stroage..
+git log   - to check all the commits made from  the local storage..
 
 
 we can obviously write all the commands onto the git bash directly but when it comes to the working and updating all the things we have to
@@ -51,9 +51,9 @@ pwd          - present working directory..
 git status       - displays the status of the code
 
 when ever we use the git status we always have 4 types of status
-1) untracked   - new files that git dosen't yet tracked
+1) untracked   - new files that git doesn’t yet tracked
 2) modified    - changed something in existing files
-3) staged      - file is ready to be commited
+3) staged      - file is ready to be committed
 4) unmodified  - unchanged 
 
 
@@ -64,14 +64,14 @@ or to add all the files you have to do
 
 git add .  - which will add all the files into the directory..
 
-after adding the file you have to commet the changes in the file
+after adding the file you must commit the changes in the file
 
-git commet -m < some message>
+git commit -m < some message>
 
 git push origin main - is used to upload the files to the github
 
 git push -u origin main -to continuously add the changes only in the main and avoid using origin main every time..
-git push -u origin main         -   (-u)  indicates that we dont have to write te origin main everytime we want to push the code.
+git push -u origin main         -   (-u)  indicates that we don’t have to write the origin main every time we want to push the code.
 
 
 
@@ -89,14 +89,14 @@ we use the
 
 commands-- 
 
-git init                        - adds .git in the loacal folder
+git init                        - adds .git in the local folder
 git remote add origin <link>    - the command to add the folder onto the github from device to the website directly.
 git remote -v                   - v to verify remote
 git branch                      - to check branch
 git branch -M main              - to rename branch
 git push origin main            -  to push the changes onto the github
 
-if any kind of error occured then you have to use the git pull to fix it
+if any kind of error occurred then you have to use the git pull to fix it
 
 ! [rejected]        main -> main (non-fast-forward)
 error: failed to push some refs to 'https://github.com/Aditya11ak/smallPersonalProjects.git'
@@ -105,7 +105,7 @@ hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-if this kind of error occured again then you have to use this command
+if this kind of error occurred again then you have to use this command
 
 git pull --rebase origin main
 
@@ -135,13 +135,13 @@ If your branch is named something other than main (e.g., master), adjust accordi
 
 
 
-@# git log   -- to check all the commits made from  the local stroage..
+@# git log   -- to check all the commits made from  the local storage..
 
 
 
-when there is more than 1 persion working on a project we have to create new branches to add new features without having to wait for other persion
+when there is more than 1 person working on a project we have to create new branches to add new features without having to wait for other person
 
-so after all the work is done we have to mearge the branches to do that these commands will be helping us.
+so after all the work is done we have to merge the branches to do that these commands will be helping us.
 
 commands--
 
@@ -161,7 +161,7 @@ commands --
 1) way to combine two different branches with each other..
 
 git diff <branch name>      - to compare commits, files, branches and more..
-git merge <branc name>      - to merge 2 branches.. 
+git merge <branch name>      - to merge 2 branches.. 
 
 
 2) by github pull request  or by    creating the PR- (pull request).
@@ -184,24 +184,24 @@ an event that takes place when git is unable to automatically resolve the differ
 #################################
 Undoing changes
 
-1- Staged (added) changes but not commited
+1- Staged (added) changes but not committed
 
 commands -- 
-git reset <file name>     - to take the entire code back to the orignal stage. unoing the change for specific file
+git reset <file name>     - to take the entire code back to the original stage. undoing the change for specific file
 git reset                 - undoing changes for all the files..
 
 
-2- commited changes( for one commit)
+2- committed changes( for one commit)
 
 git reset HEAD ~1  - this command takes the changes one step back from the current status of the code.
 
 
-3- commited changes (for many commits)
+3- committed changes (for many commits)
 
 git reset <commit hash >  - with the help of the git log you will be able to see the commit hash with which you will be able to go directly to that 
-                            change skipping alll the intermidiate changes..
+                            change skipping alll the intermediate changes..
 git reset --hard <commit hash >  - it not only removes all the changes from the file and github but also it will be removing 
-                            all the changes form the vs code which will be hleping for maintaning the changes without any extra error.
+                            all the changes form the vs code which will be helping for maintaining the changes without any extra error.
 
 
 
