@@ -1,3 +1,69 @@
+#######################################################################################################################################
+
+Very      IMP
+
+
+The error message you were facing while uploading the files onto the github from the local repo by following the commands like
+
+git init
+git add .
+git commit -m "updated changes"
+git remote add origin <link>
+git remote -v                   
+git branch                   
+git branch -M main            
+git push origin main     or git push -u origin main 
+
+
+that was giving you an error 
+
+that was because you were creating the repo with the README.md file which was creating some commits there on the server side and then
+you were adding the files from local repository to remote repository. 
+
+so thats why the github was confused that there are initial commits on the local repo also 
+
+and there is commits on remote repo also then which one to preffer and what to do was the question for the github 
+
+that's why it was rejecting the commits and showing you error and do the git pull 
+
+
+but there  is one command in this kind of case which will be helpful and can save you 
+
+that is 
+
+git push -u -f origin main       ----------- here -f means force it to push the cahnges to the remote repo 
+
+and this is the easy way to push the info to the repo if this error encountered rather than going through the tough process which you 
+followed before.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 git is a version control system which is a tool used for tracking changes in the code
 
 apart from the git there are more version control systems available such as
